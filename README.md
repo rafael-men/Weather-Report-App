@@ -1,29 +1,116 @@
-# Weather App
+# \# Weather Report App
 
-Uma aplicação de clima desenvolvida em React que permite aos usuários pesquisar o clima de diferentes cidades. A aplicação utiliza uma API de clima para fornecer informações atualizadas sobre a temperatura, condições climáticas e previsões.
+# 
 
-## Funcionalidades
+# Aplicação de previsão do tempo em React + Vite, com interface escura, e imagens de cidade.
 
-- Pesquisar o clima por cidade
-- Exibir informações detalhadas, como temperatura, umidade e condições climáticas
-- Mostrar uma imagem da cidade pesquisada
-- Interface responsiva e amigável
+# 
 
-## Tecnologias Utilizadas
+# \## Funcionalidades
 
-- **Frontend:** React
-- **Estilo:** CSS 
-- **API:** OpenWeatherApi, Unsplash
+# 
 
-## Pré-requisitos
+# \- \*\*Previsão atual + 5 dias\*\*: temperatura, sensação, umidade, pressão, visibilidade e nascer/pôr do sol.
 
-Antes de executar a aplicação, verifique se você possui o seguinte instalado em seu ambiente:
+# \- \*\*Busca com sugestões\*\*: ao digitar, aparecem cidades do mundo todo.
 
-- [Node.js](https://nodejs.org/) (versão 14 ou superior)
-- [npm](https://www.npmjs.com/) (geralmente instalado junto com o Node.js)
+# \- \*\*Busca por coordenadas\*\*: selecionar uma cidade usa a lat/lon dela, evitando ambiguidades entre cidades de mesmo nome.
 
-## Instalação
+# \- \*\*Tradução automática\*\*: as descrições do tempo vêm da API em inglês e são convertidas para português.
 
-1. Clone o repositório:
-2. Acesse a pasta main-project e , no terminal digite npm i para instalar as dependências
-3. dê o comando npm run dev para executar e acesse a aplicação na porta 5173
+# \- \*\*Ícones por condição do tempo\*\*: cada previsão exibe ícone e cor de acordo com o clima.
+
+
+
+
+
+# \## Tecnologias
+
+# 
+
+# \- React 18 + Vite
+
+# \- Tailwind CSS v4
+
+# \- Material UI (ícones)
+
+# \- OpenWeatherMap (clima, previsão e geocodificação)
+
+# \- Unsplash API (imagens)
+
+# 
+
+# \## Como rodar
+
+# 
+
+# 1\. Instale as dependências:
+
+# 
+
+# &#x20;  ```bash
+
+# &#x20;  npm install
+
+# &#x20;  ```
+
+# 
+
+# 2\. Crie um arquivo `.env` na raiz com as chaves:
+
+# 
+
+# &#x20;  ```
+
+# &#x20;  VITE\_WEATHER\_API\_KEY=suachave\_openweather
+
+# &#x20;  VITE\_UNSPLASH\_ACCESS\_KEY=suachave\_unsplash
+
+# &#x20;  VITE\_APP\_VERSION=1.1.0
+
+# &#x20;  ```
+
+# 
+
+# 3\. Inicie em desenvolvimento:
+
+# 
+
+# &#x20;  ```bash
+
+# &#x20;  npm run dev
+
+# &#x20;  ```
+
+# 
+
+# 4\. Build de produção:
+
+# 
+
+# &#x20;  ```bash
+
+# &#x20;  npm run build
+
+# &#x20;  ```
+
+# 
+
+# \## Scripts
+
+# 
+
+# | Script            | Descrição                            |
+
+# | ----------------- | ------------------------------------ |
+
+# | `npm run dev`     | Servidor de desenvolvimento (Vite)   |
+
+# | `npm run build`   | Gera o bundle de produção            |
+
+# | `npm run lint`    | Roda o ESLint                        |
+
+# | `npm run preview` | Pré-visualiza o build de produção    |
+
+# 
+
